@@ -1,0 +1,13 @@
+<a class="list-group-item clearfix mb-2" [routerLink]="[id]">
+    <div class="pull-left">
+        <div class="list-group-item-heading">
+            {{recipe.name}}
+        </div>
+        <div class="list-group-item-heading">
+            {{recipe.description}}
+        </div>
+    </div>
+    <div class="pull-right">
+        <img [src]="recipe.photoPath" class="img-responsive" style="width: 50px;" alt="Just an Image">
+    </div>
+</a>

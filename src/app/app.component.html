@@ -1,0 +1,20 @@
+<app-header></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  <div class="row" *ngIf="isDataSavedSuccessfully">
+    <p class="text-success">Data saved in the server successfully. 
+      <button (click)="hideSave()" class="btn-success" type="button">Ok</button>
+    </p>
+  </div>
+  <div class="row" *ngIf="isDataLoadedSuccessfully">
+    <p class="text-success">Data loaded form the server successfully.
+      <button (click)="hideLoad()" class="btn-success" type="button">Ok</button>
+    </p>
+  </div>
+</div>
+
+<!-- <app-test></app-test> -->

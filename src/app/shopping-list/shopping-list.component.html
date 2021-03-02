@@ -1,0 +1,16 @@
+<app-shopping-list-edit></app-shopping-list-edit>
+<hr>
+<div class="row">
+    <h1>Added Items to Cart:</h1>
+</div>
+<div class="row">
+    <div class="col-xs-10" >
+        <a 
+        class="list-group-item-action" 
+        *ngFor="let ingredient of ingredients; let i = index;"
+        (click)="onClickIngredient(i)"
+        style="cursor: pointer;">
+           <div class="list-group-item">{{ingredient.name}}({{ingredient.amount}})</div>
+        </a>
+    </div>
+</div>
